@@ -7,9 +7,18 @@ An industrial-grade, highly reliable Modbus RTU communication hardware platform 
 ---
 
 ## 📸 Project Previews
-### 3D Render view
-<img width="3450" height="1886" alt="IoT-Enabled Smart RS-485 Modbus Sensor Node" src="https://github.com/user-attachments/assets/59b69a74-aa7d-4bda-a0a9-f9ea079babf7" />
 
+### 1. 3D Renders
+| 3D Render - Front View | 3D Render - Back View |
+|---|---|
+| <img width="3450" height="1886" alt="IoT-Enabled Smart RS-485 Modbus Sensor Node" src="https://github.com/user-attachments/assets/9ff3d968-9bd7-4bad-b617-53d62f230da1" /> | <img width="3450" height="1886" alt="IoT-Enabled Smart RS-485 Modbus Sensor Node back" src="https://github.com/user-attachments/assets/37e46991-a6a3-435c-94fc-a95eda141e6e" /> |
+
+### 2. 2D PCB Routing Layout (Layer-by-Layer)
+Here is the detailed 2-layer routing layout. You can clearly see the physical separation gap that maintains true galvanic isolation between the two grounds.
+
+| Top Layer Routing (F.Cu - Red) | Bottom Layer Routing (B.Cu - Blue) |
+|---|---|
+| <img width="2612" height="1653" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/b6d06fe7-cad7-4476-8f29-445c1dc3bc59" /> | <img width="2593" height="1624" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/e2d8c636-b9c1-4e0e-b29b-4c95500986de" /> |
 ---
 
 ## 🛠️ Detailed Technical Specifications
@@ -55,12 +64,8 @@ To achieve true industrial-grade isolation, the board is split into two complete
 
 ```text
 ├── Hardware/          # Core EDA Design Files
-│   ├── *.kicad_sch    # Schematic Wiring Diagrams
-│   ├── *.kicad_pcb    # 2-Layer PCB Component Layout Rules
-│   └── *.kicad_pro    # KiCad Active Workspace Configuration
+│   ├── *.ATmega controller board.kicad_sch    # Schematic Wiring Diagrams
+│   ├── *.ATmega controller board.kicad_pcb    # 2-Layer PCB Component Layout Rules
+│   └── *.ATmega controller board.kicad_pro    # KiCad Active Workspace Configuration
 ├── Manufacturing/     # Production Release Packages
-│   └── Gerbers.zip    # Standard RS-274X Gerber & Drill Fabrication files
-├── Docs/              # Technical Records & Visual Attachments
-│   ├── BOM.csv        # Detailed Bill of Materials with part designations
-│   └── *.png          # High-resolution 3D Top/Bottom layout renders
-└── README.md          # Primary Documentation Core
+│   └── Gerber.zip     # Standard RS-274X Gerber & Drill Fabrication files
