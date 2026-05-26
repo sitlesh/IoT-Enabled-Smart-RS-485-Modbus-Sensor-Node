@@ -60,12 +60,14 @@ To achieve true industrial-grade isolation, the board is split into two complete
 
 ---
 
-## 📂 Repository Directory Structure
+## 📁 Repository Directory Structure
 
-```text
-├── Hardware/          # Core EDA Design Files
-│   ├── *.ATmega controller board.kicad_sch    # Schematic Wiring Diagrams
-│   ├── *.ATmega controller board.kicad_pcb    # 2-Layer PCB Component Layout Rules
-│   └── *.ATmega controller board.kicad_pro    # KiCad Active Workspace Configuration
-├── Manufacturing/     # Production Release Packages
-│   └── Gerber.zip     # Standard RS-274X Gerber & Drill Fabrication files
+This repository contains all the native design assets and manufacturing files required to replicate or modify this project.
+
+### 🛠️ Core EDA Design Files (KiCad 8.0)
+* **[`ATmega controller board.kicad_pro`](./ATmega%20controller%20board.kicad_pro)** - Master KiCad project management file.
+* **[`ATmega controller board.kicad_sch`](./ATmega%20controller%20board.kicad_sch)** - Schematic capture detailing logical nets, MCU connections, power regulation, and RS-485 transceiver circuitry.
+* **[`ATmega controller board.kicad_pcb`](./ATmega%20controller%20board.kicad_pcb)** - Physical 2-layer PCB layout with optimized component positioning, power loops, and differential pairs.
+
+### 📦 Manufacturing & Fabrication Outputs
+* **[`Gerber.zip`](./Gerber.zip)** - Production-ready, compressed industrial manufacturing files (Gerbers and NC Drill data) formatted for immediate submission to fabrication houses (e.g., JLCPCB, PCBWay).
